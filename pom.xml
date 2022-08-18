@@ -247,7 +247,6 @@
           <propertiesEncoding>UTF-8</propertiesEncoding>
           <nonFilteredFileExtensions>
             <nonFilteredFileExtension>png</nonFilteredFileExtension>
-            <nonFilteredFileExtension>properties</nonFilteredFileExtension>
           </nonFilteredFileExtensions>
         </configuration>
       </plugin>
