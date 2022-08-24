@@ -7,22 +7,31 @@ The following was discovered as part of building this project:
 # Run application locally
 
 * Have java 11 and Maven installed
-* Choose the local profile to launch the application with the properties of application-local.properties
+* Start PostgerSQL (version 11 or higher) on your pc and create an empty database called cenadif.
+  DBeaver app is recommended to manage database.
+* Choose the local profile to launch the application with the properties of
+  application-local.properties
+* Intellij IDEA:
     * Inside "Run/Debug Configurations" in the section "Active profile" set local
     * If the above option is not available in your IDE version within the VM Options section set "
       -Dspring.profiles.active=test"
-* Inside application.properties there is the environment variable ${PWD}. Normally on Linux and Mac it is a reserved
-  word to point to the current directory where the project folder is located. If your operating system does not
-  recognize it, go to "Run/Debug Configurations" and in "Enviroment variables" create a variable called PWD and set it
-  to any directory where you want the application logs to be stored.
+    * Inside application.properties there is the environment variable ${PWD}. Normally on Linux and
+      Mac it is a reserved word to point to the current directory where the project folder is
+      located. If your operating system does not recognize it, go to "Run/Debug Configurations" and
+      in "Enviroment variables" create a variable called PWD and set it to any directory where you
+      want the application logs to be stored.
+* Run application
 
 # Swagger
 
+* Run application
 * LINK: http://localhost:8085/api/swagger-ui/index.html
-* To test userController endpoints, you can use the default user "username": "Admin", "password": "Admin"
-* For the sending of emails to work, they must do what the comment added in the EmailConfiguration class indicates
-* Create a new user by placing an email of yours to be able to test the sending of emails and the recovery of the
-  password.
+* To test userController endpoints, you can use the default user "username": "Admin", "password": "
+  Admin"
+* For the sending of emails to work, they must do what the comment added in the EmailConfiguration
+  class indicates
+* Create a new user by placing an email of yours to be able to test the sending of emails and the
+  recovery of the password.
 
 # Getting Started
 
